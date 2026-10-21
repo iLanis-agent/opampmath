@@ -1,0 +1,971 @@
+{
+ "cases": [
+  {
+   "fn": "noninv",
+   "args": [
+    "10000",
+    "1000",
+    "0.2"
+   ],
+   "expect": "A 10000 Ω feedback over a 1000 Ω to ground gives a gain of 11. 0.2 V in comes out at 2.2 V."
+  },
+  {
+   "fn": "inv",
+   "args": [
+    "10000",
+    "2000",
+    "0.2"
+   ],
+   "expect": "With 10000 Ω feedback and 2000 Ω in, the gain is -5. 0.2 V in comes out at -1 V."
+  },
+  {
+   "fn": "sm",
+   "args": [
+    "10000",
+    "10000",
+    "0.5",
+    "5000",
+    "1"
+   ],
+   "expect": "With 10000 Ω feedback, 0.5 V through 10000 Ω and 1 V through 5000 Ω sum to -2.5 V."
+  },
+  {
+   "fn": "noninv",
+   "args": [
+    "919581",
+    "553574",
+    "9.74"
+   ],
+   "expect": "A 919581 Ω feedback over a 553574 Ω to ground gives a gain of 2.66. 9.74 V in comes out at 25.92 V."
+  },
+  {
+   "fn": "inv",
+   "args": [
+    "919581",
+    "553574",
+    "9.74"
+   ],
+   "expect": "With 919581 Ω feedback and 553574 Ω in, the gain is -1.66. 9.74 V in comes out at -16.18 V."
+  },
+  {
+   "fn": "sm",
+   "args": [
+    "919581",
+    "178320",
+    "0.59",
+    "544174",
+    "7.13"
+   ],
+   "expect": "With 919581 Ω feedback, 0.59 V through 178320 Ω and 7.13 V through 544174 Ω sum to -15.09 V."
+  },
+  {
+   "fn": "noninv",
+   "args": [
+    "707612",
+    "946024",
+    "4.82"
+   ],
+   "expect": "A 707612 Ω feedback over a 946024 Ω to ground gives a gain of 1.75. 4.82 V in comes out at 8.43 V."
+  },
+  {
+   "fn": "inv",
+   "args": [
+    "707612",
+    "946024",
+    "4.82"
+   ],
+   "expect": "With 707612 Ω feedback and 946024 Ω in, the gain is -0.75. 4.82 V in comes out at -3.61 V."
+  },
+  {
+   "fn": "sm",
+   "args": [
+    "707612",
+    "166029",
+    "6.24",
+    "939361",
+    "5.39"
+   ],
+   "expect": "With 707612 Ω feedback, 6.24 V through 166029 Ω and 5.39 V through 939361 Ω sum to -30.65 V."
+  },
+  {
+   "fn": "noninv",
+   "args": [
+    "66394",
+    "300917",
+    "9.95"
+   ],
+   "expect": "A 66394 Ω feedback over a 300917 Ω to ground gives a gain of 1.22. 9.95 V in comes out at 12.15 V."
+  },
+  {
+   "fn": "inv",
+   "args": [
+    "66394",
+    "300917",
+    "9.95"
+   ],
+   "expect": "With 66394 Ω feedback and 300917 Ω in, the gain is -0.22. 9.95 V in comes out at -2.2 V."
+  },
+  {
+   "fn": "sm",
+   "args": [
+    "66394",
+    "351168",
+    "1.5",
+    "930778",
+    "7.07"
+   ],
+   "expect": "With 66394 Ω feedback, 1.5 V through 351168 Ω and 7.07 V through 930778 Ω sum to -0.79 V."
+  },
+  {
+   "fn": "noninv",
+   "args": [
+    "260560",
+    "817007",
+    "2.25"
+   ],
+   "expect": "A 260560 Ω feedback over a 817007 Ω to ground gives a gain of 1.32. 2.25 V in comes out at 2.97 V."
+  },
+  {
+   "fn": "inv",
+   "args": [
+    "260560",
+    "817007",
+    "2.25"
+   ],
+   "expect": "With 260560 Ω feedback and 817007 Ω in, the gain is -0.32. 2.25 V in comes out at -0.72 V."
+  },
+  {
+   "fn": "sm",
+   "args": [
+    "260560",
+    "649215",
+    "1.12",
+    "970639",
+    "1.25"
+   ],
+   "expect": "With 260560 Ω feedback, 1.12 V through 649215 Ω and 1.25 V through 970639 Ω sum to -0.79 V."
+  },
+  {
+   "fn": "noninv",
+   "args": [
+    "543165",
+    "175775",
+    "9.54"
+   ],
+   "expect": "A 543165 Ω feedback over a 175775 Ω to ground gives a gain of 4.09. 9.54 V in comes out at 39.02 V."
+  },
+  {
+   "fn": "inv",
+   "args": [
+    "543165",
+    "175775",
+    "9.54"
+   ],
+   "expect": "With 543165 Ω feedback and 175775 Ω in, the gain is -3.09. 9.54 V in comes out at -29.48 V."
+  },
+  {
+   "fn": "sm",
+   "args": [
+    "543165",
+    "364866",
+    "1.5",
+    "608242",
+    "9.23"
+   ],
+   "expect": "With 543165 Ω feedback, 1.5 V through 364866 Ω and 9.23 V through 608242 Ω sum to -10.48 V."
+  },
+  {
+   "fn": "noninv",
+   "args": [
+    "964661",
+    "927694",
+    "9.82"
+   ],
+   "expect": "A 964661 Ω feedback over a 927694 Ω to ground gives a gain of 2.04. 9.82 V in comes out at 20.03 V."
+  },
+  {
+   "fn": "inv",
+   "args": [
+    "964661",
+    "927694",
+    "9.82"
+   ],
+   "expect": "With 964661 Ω feedback and 927694 Ω in, the gain is -1.04. 9.82 V in comes out at -10.21 V."
+  },
+  {
+   "fn": "sm",
+   "args": [
+    "964661",
+    "5918",
+    "5.61",
+    "28434",
+    "2.72"
+   ],
+   "expect": "With 964661 Ω feedback, 5.61 V through 5918 Ω and 2.72 V through 28434 Ω sum to -1006.74 V."
+  },
+  {
+   "fn": "noninv",
+   "args": [
+    "188177",
+    "371799",
+    "2.98"
+   ],
+   "expect": "A 188177 Ω feedback over a 371799 Ω to ground gives a gain of 1.51. 2.98 V in comes out at 4.49 V."
+  },
+  {
+   "fn": "inv",
+   "args": [
+    "188177",
+    "371799",
+    "2.98"
+   ],
+   "expect": "With 188177 Ω feedback and 371799 Ω in, the gain is -0.51. 2.98 V in comes out at -1.51 V."
+  },
+  {
+   "fn": "sm",
+   "args": [
+    "188177",
+    "766508",
+    "7.75",
+    "282656",
+    "9.71"
+   ],
+   "expect": "With 188177 Ω feedback, 7.75 V through 766508 Ω and 9.71 V through 282656 Ω sum to -8.37 V."
+  },
+  {
+   "fn": "noninv",
+   "args": [
+    "504128",
+    "906693",
+    "0.96"
+   ],
+   "expect": "A 504128 Ω feedback over a 906693 Ω to ground gives a gain of 1.56. 0.96 V in comes out at 1.49 V."
+  },
+  {
+   "fn": "inv",
+   "args": [
+    "504128",
+    "906693",
+    "0.96"
+   ],
+   "expect": "With 504128 Ω feedback and 906693 Ω in, the gain is -0.56. 0.96 V in comes out at -0.53 V."
+  },
+  {
+   "fn": "sm",
+   "args": [
+    "504128",
+    "162660",
+    "6.11",
+    "622213",
+    "6.24"
+   ],
+   "expect": "With 504128 Ω feedback, 6.11 V through 162660 Ω and 6.24 V through 622213 Ω sum to -23.99 V."
+  },
+  {
+   "fn": "noninv",
+   "args": [
+    "33233",
+    "733641",
+    "7.92"
+   ],
+   "expect": "A 33233 Ω feedback over a 733641 Ω to ground gives a gain of 1.05. 7.92 V in comes out at 8.28 V."
+  },
+  {
+   "fn": "inv",
+   "args": [
+    "33233",
+    "733641",
+    "7.92"
+   ],
+   "expect": "With 33233 Ω feedback and 733641 Ω in, the gain is -0.05. 7.92 V in comes out at -0.36 V."
+  },
+  {
+   "fn": "sm",
+   "args": [
+    "33233",
+    "5305",
+    "8.78",
+    "400296",
+    "6.82"
+   ],
+   "expect": "With 33233 Ω feedback, 8.78 V through 5305 Ω and 6.82 V through 400296 Ω sum to -55.57 V."
+  },
+  {
+   "fn": "noninv",
+   "args": [
+    "783140",
+    "22228",
+    "5.95"
+   ],
+   "expect": "A 783140 Ω feedback over a 22228 Ω to ground gives a gain of 36.23. 5.95 V in comes out at 215.58 V."
+  },
+  {
+   "fn": "inv",
+   "args": [
+    "783140",
+    "22228",
+    "5.95"
+   ],
+   "expect": "With 783140 Ω feedback and 22228 Ω in, the gain is -35.23. 5.95 V in comes out at -209.63 V."
+  },
+  {
+   "fn": "sm",
+   "args": [
+    "783140",
+    "951771",
+    "9.76",
+    "148571",
+    "3.03"
+   ],
+   "expect": "With 783140 Ω feedback, 9.76 V through 951771 Ω and 3.03 V through 148571 Ω sum to -24 V."
+  },
+  {
+   "fn": "noninv",
+   "args": [
+    "147726",
+    "697623",
+    "7.45"
+   ],
+   "expect": "A 147726 Ω feedback over a 697623 Ω to ground gives a gain of 1.21. 7.45 V in comes out at 9.03 V."
+  },
+  {
+   "fn": "inv",
+   "args": [
+    "147726",
+    "697623",
+    "7.45"
+   ],
+   "expect": "With 147726 Ω feedback and 697623 Ω in, the gain is -0.21. 7.45 V in comes out at -1.58 V."
+  },
+  {
+   "fn": "sm",
+   "args": [
+    "147726",
+    "215085",
+    "4.91",
+    "881308",
+    "6.68"
+   ],
+   "expect": "With 147726 Ω feedback, 4.91 V through 215085 Ω and 6.68 V through 881308 Ω sum to -4.49 V."
+  },
+  {
+   "fn": "noninv",
+   "args": [
+    "837204",
+    "199198",
+    "2.91"
+   ],
+   "expect": "A 837204 Ω feedback over a 199198 Ω to ground gives a gain of 5.2. 2.91 V in comes out at 15.14 V."
+  },
+  {
+   "fn": "inv",
+   "args": [
+    "837204",
+    "199198",
+    "2.91"
+   ],
+   "expect": "With 837204 Ω feedback and 199198 Ω in, the gain is -4.2. 2.91 V in comes out at -12.23 V."
+  },
+  {
+   "fn": "sm",
+   "args": [
+    "837204",
+    "417700",
+    "1.43",
+    "660997",
+    "2.23"
+   ],
+   "expect": "With 837204 Ω feedback, 1.43 V through 417700 Ω and 2.23 V through 660997 Ω sum to -5.69 V."
+  },
+  {
+   "fn": "noninv",
+   "args": [
+    "83838",
+    "36451",
+    "1.12"
+   ],
+   "expect": "A 83838 Ω feedback over a 36451 Ω to ground gives a gain of 3.3. 1.12 V in comes out at 3.7 V."
+  },
+  {
+   "fn": "inv",
+   "args": [
+    "83838",
+    "36451",
+    "1.12"
+   ],
+   "expect": "With 83838 Ω feedback and 36451 Ω in, the gain is -2.3. 1.12 V in comes out at -2.58 V."
+  },
+  {
+   "fn": "sm",
+   "args": [
+    "83838",
+    "8255",
+    "5.51",
+    "16443",
+    "2.25"
+   ],
+   "expect": "With 83838 Ω feedback, 5.51 V through 8255 Ω and 2.25 V through 16443 Ω sum to -67.43 V."
+  },
+  {
+   "fn": "noninv",
+   "args": [
+    "116267",
+    "844668",
+    "2.92"
+   ],
+   "expect": "A 116267 Ω feedback over a 844668 Ω to ground gives a gain of 1.14. 2.92 V in comes out at 3.32 V."
+  },
+  {
+   "fn": "inv",
+   "args": [
+    "116267",
+    "844668",
+    "2.92"
+   ],
+   "expect": "With 116267 Ω feedback and 844668 Ω in, the gain is -0.14. 2.92 V in comes out at -0.4 V."
+  },
+  {
+   "fn": "sm",
+   "args": [
+    "116267",
+    "777330",
+    "2.06",
+    "819518",
+    "1.75"
+   ],
+   "expect": "With 116267 Ω feedback, 2.06 V through 777330 Ω and 1.75 V through 819518 Ω sum to -0.56 V."
+  },
+  {
+   "fn": "noninv",
+   "args": [
+    "621330",
+    "70185",
+    "7.57"
+   ],
+   "expect": "A 621330 Ω feedback over a 70185 Ω to ground gives a gain of 9.85. 7.57 V in comes out at 74.59 V."
+  },
+  {
+   "fn": "inv",
+   "args": [
+    "621330",
+    "70185",
+    "7.57"
+   ],
+   "expect": "With 621330 Ω feedback and 70185 Ω in, the gain is -8.85. 7.57 V in comes out at -67.02 V."
+  },
+  {
+   "fn": "sm",
+   "args": [
+    "621330",
+    "365672",
+    "9.36",
+    "824909",
+    "9.81"
+   ],
+   "expect": "With 621330 Ω feedback, 9.36 V through 365672 Ω and 9.81 V through 824909 Ω sum to -23.29 V."
+  },
+  {
+   "fn": "noninv",
+   "args": [
+    "383811",
+    "275081",
+    "7.71"
+   ],
+   "expect": "A 383811 Ω feedback over a 275081 Ω to ground gives a gain of 2.4. 7.71 V in comes out at 18.47 V."
+  },
+  {
+   "fn": "inv",
+   "args": [
+    "383811",
+    "275081",
+    "7.71"
+   ],
+   "expect": "With 383811 Ω feedback and 275081 Ω in, the gain is -1.4. 7.71 V in comes out at -10.76 V."
+  },
+  {
+   "fn": "sm",
+   "args": [
+    "383811",
+    "577315",
+    "7.88",
+    "553553",
+    "5.59"
+   ],
+   "expect": "With 383811 Ω feedback, 7.88 V through 577315 Ω and 5.59 V through 553553 Ω sum to -9.11 V."
+  },
+  {
+   "fn": "noninv",
+   "args": [
+    "156656",
+    "228723",
+    "5.58"
+   ],
+   "expect": "A 156656 Ω feedback over a 228723 Ω to ground gives a gain of 1.68. 5.58 V in comes out at 9.4 V."
+  },
+  {
+   "fn": "inv",
+   "args": [
+    "156656",
+    "228723",
+    "5.58"
+   ],
+   "expect": "With 156656 Ω feedback and 228723 Ω in, the gain is -0.68. 5.58 V in comes out at -3.82 V."
+  },
+  {
+   "fn": "sm",
+   "args": [
+    "156656",
+    "643832",
+    "0.3",
+    "354572",
+    "5.2"
+   ],
+   "expect": "With 156656 Ω feedback, 0.3 V through 643832 Ω and 5.2 V through 354572 Ω sum to -2.37 V."
+  },
+  {
+   "fn": "noninv",
+   "args": [
+    "556148",
+    "588655",
+    "1.12"
+   ],
+   "expect": "A 556148 Ω feedback over a 588655 Ω to ground gives a gain of 1.94. 1.12 V in comes out at 2.18 V."
+  },
+  {
+   "fn": "inv",
+   "args": [
+    "556148",
+    "588655",
+    "1.12"
+   ],
+   "expect": "With 556148 Ω feedback and 588655 Ω in, the gain is -0.94. 1.12 V in comes out at -1.06 V."
+  },
+  {
+   "fn": "sm",
+   "args": [
+    "556148",
+    "822627",
+    "4.22",
+    "449388",
+    "0.03"
+   ],
+   "expect": "With 556148 Ω feedback, 4.22 V through 822627 Ω and 0.03 V through 449388 Ω sum to -2.89 V."
+  },
+  {
+   "fn": "noninv",
+   "args": [
+    "66738",
+    "297123",
+    "0.67"
+   ],
+   "expect": "A 66738 Ω feedback over a 297123 Ω to ground gives a gain of 1.22. 0.67 V in comes out at 0.82 V."
+  },
+  {
+   "fn": "inv",
+   "args": [
+    "66738",
+    "297123",
+    "0.67"
+   ],
+   "expect": "With 66738 Ω feedback and 297123 Ω in, the gain is -0.22. 0.67 V in comes out at -0.15 V."
+  },
+  {
+   "fn": "sm",
+   "args": [
+    "66738",
+    "562334",
+    "9.44",
+    "694348",
+    "2.63"
+   ],
+   "expect": "With 66738 Ω feedback, 9.44 V through 562334 Ω and 2.63 V through 694348 Ω sum to -1.37 V."
+  },
+  {
+   "fn": "noninv",
+   "args": [
+    "113790",
+    "748980",
+    "7.63"
+   ],
+   "expect": "A 113790 Ω feedback over a 748980 Ω to ground gives a gain of 1.15. 7.63 V in comes out at 8.79 V."
+  },
+  {
+   "fn": "inv",
+   "args": [
+    "113790",
+    "748980",
+    "7.63"
+   ],
+   "expect": "With 113790 Ω feedback and 748980 Ω in, the gain is -0.15. 7.63 V in comes out at -1.16 V."
+  },
+  {
+   "fn": "sm",
+   "args": [
+    "113790",
+    "557589",
+    "7.97",
+    "624320",
+    "9.41"
+   ],
+   "expect": "With 113790 Ω feedback, 7.97 V through 557589 Ω and 9.41 V through 624320 Ω sum to -3.34 V."
+  },
+  {
+   "fn": "noninv",
+   "args": [
+    "529059",
+    "268730",
+    "1.89"
+   ],
+   "expect": "A 529059 Ω feedback over a 268730 Ω to ground gives a gain of 2.97. 1.89 V in comes out at 5.61 V."
+  },
+  {
+   "fn": "inv",
+   "args": [
+    "529059",
+    "268730",
+    "1.89"
+   ],
+   "expect": "With 529059 Ω feedback and 268730 Ω in, the gain is -1.97. 1.89 V in comes out at -3.72 V."
+  },
+  {
+   "fn": "sm",
+   "args": [
+    "529059",
+    "550825",
+    "7.34",
+    "118993",
+    "6"
+   ],
+   "expect": "With 529059 Ω feedback, 7.34 V through 550825 Ω and 6 V through 118993 Ω sum to -33.73 V."
+  },
+  {
+   "fn": "noninv",
+   "args": [
+    "835158",
+    "31139",
+    "7.88"
+   ],
+   "expect": "A 835158 Ω feedback over a 31139 Ω to ground gives a gain of 27.82. 7.88 V in comes out at 219.22 V."
+  },
+  {
+   "fn": "inv",
+   "args": [
+    "835158",
+    "31139",
+    "7.88"
+   ],
+   "expect": "With 835158 Ω feedback and 31139 Ω in, the gain is -26.82. 7.88 V in comes out at -211.34 V."
+  },
+  {
+   "fn": "sm",
+   "args": [
+    "835158",
+    "332029",
+    "6.21",
+    "775749",
+    "4.42"
+   ],
+   "expect": "With 835158 Ω feedback, 6.21 V through 332029 Ω and 4.42 V through 775749 Ω sum to -20.38 V."
+  },
+  {
+   "fn": "noninv",
+   "args": [
+    "495855",
+    "725134",
+    "4.78"
+   ],
+   "expect": "A 495855 Ω feedback over a 725134 Ω to ground gives a gain of 1.68. 4.78 V in comes out at 8.05 V."
+  },
+  {
+   "fn": "inv",
+   "args": [
+    "495855",
+    "725134",
+    "4.78"
+   ],
+   "expect": "With 495855 Ω feedback and 725134 Ω in, the gain is -0.68. 4.78 V in comes out at -3.27 V."
+  },
+  {
+   "fn": "sm",
+   "args": [
+    "495855",
+    "299660",
+    "5.91",
+    "309418",
+    "6.52"
+   ],
+   "expect": "With 495855 Ω feedback, 5.91 V through 299660 Ω and 6.52 V through 309418 Ω sum to -20.23 V."
+  },
+  {
+   "fn": "noninv",
+   "args": [
+    "286694",
+    "29622",
+    "7.28"
+   ],
+   "expect": "A 286694 Ω feedback over a 29622 Ω to ground gives a gain of 10.68. 7.28 V in comes out at 77.74 V."
+  },
+  {
+   "fn": "inv",
+   "args": [
+    "286694",
+    "29622",
+    "7.28"
+   ],
+   "expect": "With 286694 Ω feedback and 29622 Ω in, the gain is -9.68. 7.28 V in comes out at -70.46 V."
+  },
+  {
+   "fn": "sm",
+   "args": [
+    "286694",
+    "829645",
+    "0.88",
+    "616915",
+    "1.98"
+   ],
+   "expect": "With 286694 Ω feedback, 0.88 V through 829645 Ω and 1.98 V through 616915 Ω sum to -1.22 V."
+  },
+  {
+   "fn": "noninv",
+   "args": [
+    "609949",
+    "459307",
+    "5.44"
+   ],
+   "expect": "A 609949 Ω feedback over a 459307 Ω to ground gives a gain of 2.33. 5.44 V in comes out at 12.66 V."
+  },
+  {
+   "fn": "inv",
+   "args": [
+    "609949",
+    "459307",
+    "5.44"
+   ],
+   "expect": "With 609949 Ω feedback and 459307 Ω in, the gain is -1.33. 5.44 V in comes out at -7.22 V."
+  },
+  {
+   "fn": "sm",
+   "args": [
+    "609949",
+    "54724",
+    "7.33",
+    "413728",
+    "6.5"
+   ],
+   "expect": "With 609949 Ω feedback, 7.33 V through 54724 Ω and 6.5 V through 413728 Ω sum to -91.28 V."
+  },
+  {
+   "fn": "noninv",
+   "args": [
+    "34100",
+    "771340",
+    "4.71"
+   ],
+   "expect": "A 34100 Ω feedback over a 771340 Ω to ground gives a gain of 1.04. 4.71 V in comes out at 4.92 V."
+  },
+  {
+   "fn": "inv",
+   "args": [
+    "34100",
+    "771340",
+    "4.71"
+   ],
+   "expect": "With 34100 Ω feedback and 771340 Ω in, the gain is -0.04. 4.71 V in comes out at -0.21 V."
+  },
+  {
+   "fn": "sm",
+   "args": [
+    "34100",
+    "472578",
+    "8.91",
+    "769510",
+    "7.17"
+   ],
+   "expect": "With 34100 Ω feedback, 8.91 V through 472578 Ω and 7.17 V through 769510 Ω sum to -0.96 V."
+  },
+  {
+   "fn": "noninv",
+   "args": [
+    "109450",
+    "982599",
+    "8.84"
+   ],
+   "expect": "A 109450 Ω feedback over a 982599 Ω to ground gives a gain of 1.11. 8.84 V in comes out at 9.82 V."
+  },
+  {
+   "fn": "inv",
+   "args": [
+    "109450",
+    "982599",
+    "8.84"
+   ],
+   "expect": "With 109450 Ω feedback and 982599 Ω in, the gain is -0.11. 8.84 V in comes out at -0.98 V."
+  },
+  {
+   "fn": "sm",
+   "args": [
+    "109450",
+    "718866",
+    "5.83",
+    "123467",
+    "0.77"
+   ],
+   "expect": "With 109450 Ω feedback, 5.83 V through 718866 Ω and 0.77 V through 123467 Ω sum to -1.57 V."
+  },
+  {
+   "fn": "noninv",
+   "args": [
+    "872044",
+    "364718",
+    "0.9"
+   ],
+   "expect": "A 872044 Ω feedback over a 364718 Ω to ground gives a gain of 3.39. 0.9 V in comes out at 3.05 V."
+  },
+  {
+   "fn": "inv",
+   "args": [
+    "872044",
+    "364718",
+    "0.9"
+   ],
+   "expect": "With 872044 Ω feedback and 364718 Ω in, the gain is -2.39. 0.9 V in comes out at -2.15 V."
+  },
+  {
+   "fn": "sm",
+   "args": [
+    "872044",
+    "489796",
+    "9.71",
+    "52706",
+    "5.39"
+   ],
+   "expect": "With 872044 Ω feedback, 9.71 V through 489796 Ω and 5.39 V through 52706 Ω sum to -106.47 V."
+  },
+  {
+   "fn": "noninv",
+   "args": [
+    "622566",
+    "282961",
+    "1.78"
+   ],
+   "expect": "A 622566 Ω feedback over a 282961 Ω to ground gives a gain of 3.2. 1.78 V in comes out at 5.7 V."
+  },
+  {
+   "fn": "inv",
+   "args": [
+    "622566",
+    "282961",
+    "1.78"
+   ],
+   "expect": "With 622566 Ω feedback and 282961 Ω in, the gain is -2.2. 1.78 V in comes out at -3.92 V."
+  },
+  {
+   "fn": "sm",
+   "args": [
+    "622566",
+    "275884",
+    "1.61",
+    "251082",
+    "4.1"
+   ],
+   "expect": "With 622566 Ω feedback, 1.61 V through 275884 Ω and 4.1 V through 251082 Ω sum to -13.8 V."
+  },
+  {
+   "fn": "noninv",
+   "args": [
+    "761124",
+    "916772",
+    "0.66"
+   ],
+   "expect": "A 761124 Ω feedback over a 916772 Ω to ground gives a gain of 1.83. 0.66 V in comes out at 1.21 V."
+  },
+  {
+   "fn": "inv",
+   "args": [
+    "761124",
+    "916772",
+    "0.66"
+   ],
+   "expect": "With 761124 Ω feedback and 916772 Ω in, the gain is -0.83. 0.66 V in comes out at -0.55 V."
+  },
+  {
+   "fn": "sm",
+   "args": [
+    "761124",
+    "59751",
+    "3.5",
+    "742773",
+    "3.47"
+   ],
+   "expect": "With 761124 Ω feedback, 3.5 V through 59751 Ω and 3.47 V through 742773 Ω sum to -48.14 V."
+  }
+ ],
+ "errors": [
+  [
+   "noninv",
+   [
+    "0",
+    "1000",
+    "0.2"
+   ]
+  ],
+  [
+   "noninv",
+   [
+    "1000001",
+    "1000",
+    "0.2"
+   ]
+  ],
+  [
+   "noninv",
+   [
+    "10000",
+    "1000",
+    "0"
+   ]
+  ],
+  [
+   "noninv",
+   [
+    "10000",
+    "1000",
+    "10.001"
+   ]
+  ],
+  [
+   "noninv",
+   [
+    "1.5",
+    "1000",
+    "0.2"
+   ]
+  ],
+  [
+   "inv",
+   [
+    "10000",
+    "0",
+    "0.2"
+   ]
+  ],
+  [
+   "inv",
+   [
+    "10000",
+    "2000",
+    "10.01"
+   ]
+  ],
+  [
+   "sm",
+   [
+    "10000",
+    "10000",
+    "0.5",
+    "0",
+    "1"
+   ]
+  ]
+ ]
+}
